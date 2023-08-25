@@ -2,26 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+# ANGULAR FUNDAMENTALS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Repo to practice on Angular using the gidelines of the platzi course: Fundamentos de Angular
 
-## Code scaffolding
+## Learning
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### L2 - Intalación
 
-## Build
+- Verify some versions: `node -v`, `pnpm -v`
+- If there is an odd NodeJS version; change it to an even numbered one
+- Change node version: `nvm use xx.yy.z`
+- Install globally angular CLI: `pnpm i -g @angular/cli`
+- Change the package manager to pnpm (only globally): `ng config -g cli.packageManager pnpm`
+- Go to a parent folder, create a project, follow instructions: `ng new [project-name]`
+- Enter the new folder, build and run the app: `ng serve [project-name]`
+Bonus
+- Know size of a folder: `du -sh [folder-name]`... the fresh angular project has 307MB!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### L3 - Comandos para correr el proyecto
 
-## Running unit tests
+- Run with browser oppeming: `ng serve -o`
+- Run designating a port: `ng serve port=3499`
+- Inside a workspace, `ng version` gives info on dependencies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### L4 - Estructura básica de un proyecto
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `src` contains the app itself
+- `.editorconfig` is a kind of lintern that work together with the `angular lang service` extension
+- `tsconfig.json` hold TS settings like JS version and strict mode
+- `angular.json` holds the project config associated to angular like versioning, build and test
