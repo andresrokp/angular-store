@@ -32,3 +32,23 @@ Bonus
 - `.editorconfig` is a kind of lintern that work together with the `angular lang service` extension
 - `tsconfig.json` hold TS settings like JS version and strict mode
 - `angular.json` holds the project config associated to angular like versioning, build and test
+
+### L5 - Sintaxis básica de TypeScript para Angular
+
+- I can declare and use variables just as with vanilla JS: `const myVar = 5;  let myVar2 = 'hello'`
+- Now with TS, I can denote variables type: `const myVar:number = 5 ; let myVar2:string = 'hello'`
+- Once I denote a type, I MUST respect it everywhere
+- `myVar2 = 5` shows error
+- `myVar2:number = 'hello'` shows error
+- Is mandatory to denote functions input type `function sum(num1:number, num2:number) {...}`
+- I can denote functions output type `function sum(num1:number, num2:number):string {...}`
+- But then is mandatory: `function sum(n1:number, n2:number):string {return n1+n2}` shows error
+- TS is very Object Oriented.
+- Intensive use of classes.
+- Implement a class: `class Person{ ... }`
+- Declare class attributes: `var:type;`, at top of the class
+- Constructor function: `constructor (args:types){ ... }`
+- Attribute assignment `this.var = var`
+- Set public/private access to atts: `public var:type ; private var2:type`, at the top.
+- Shorten all the previous: `class MyClass{  constructor(access args:types){} }`
+- Instanciate an object: `const myObj = new MyClass(args)`
