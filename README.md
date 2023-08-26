@@ -23,7 +23,7 @@ Bonus
 ### L3 - Comandos para correr el proyecto
 
 - Run with browser oppeming: `ng serve -o`
-- Run designating a port: `ng serve port=3499`
+- Run designating a port: `ng serve --port=3499`
 - Inside a workspace, `ng version` gives info on dependencies
 
 ### L4 - Estructura básica de un proyecto
@@ -52,3 +52,20 @@ Bonus
 - Set public/private access to atts: `public var:type ; private var2:type`, at the top.
 - Shorten all the previous: `class MyClass{  constructor(access args:types){} }`
 - Instanciate an object: `const myObj = new MyClass(args)`
+
+### L6 - String interpolation and the Component TS File
+
+- String Interpolation is the way to put TS inside html.
+- uses the doble curly brackets: `<htmltag prop={{ TS_1 }}> content {{ TS_2 }} content <htmltag>`.
+- Can be inserted any where in the html.
+- Can be self defigned instructions.
+- Or can be variables from the Component Object: `{{ myVarFromObjectFile }}`.
+- The Component TS file is a TS file next to the Component HTML file.
+- The Comp TS file has a @Decorator that indicate relation with other files.
+- Component Decorator importing at top: `import Component from '@angular/core';`  .
+- Decorator statement: `@Component( {options:values} )`.
+- Component Decorator options: `selector`, `templateUrl`, `styleUrls`.
+- The Component Object is a class exported by the TS file.
+- Declaratio and exporting of the Object: `export class MyComponent{ attributes & methods }`.
+- I can declare public and private access to attributes.
+- Private atts cannot be accessed from the HTML template.

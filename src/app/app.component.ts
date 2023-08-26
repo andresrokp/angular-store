@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-store';
+  myVar1 = 'angular-store';
+  myVar2 = 13;
+  public myVar3 = 'MePuedenAcceder'
+  private myVar4 = 'NoMePuedenAcceder'
 }
