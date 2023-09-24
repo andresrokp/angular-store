@@ -8,4 +8,18 @@
 <p>Hola Var3 que eres pública : {{ myVar3 }}</p>
 <!-- <p>No te puedo ver Var4 que eres privada: {{ myVar4 }}</p>        shows error-->  
 
+<h2>Hola {{ "Property binding".toUpperCase() }}</h2>
 
+<pre>Set 'disabled' property of the button using property binding with an isDisabled variable in the component</pre>
+<button [disabled]="isDisabled">Action</button>
+<pre>Set the content of the input textbox ('value' property) with property binding</pre>
+<input type="text" [value]="name">
+<pre>Progress with value associated to p.bind</pre>
+<progress max="100" [value]="numerito"></progress>
+<pre>Image src</pre>
+<img width="50" [src]="picUrl"/>
+<pre>All together using and object</pre>
+<button [disabled]="anObject.isDisabledProp">Action</button>
+<input type="text" [value]="anObject.nameProp">
+<progress max="100" [value]="anObject.numeritoProp"></progress>
+<img width="50" [src]="anObject.picUrlProp"/>

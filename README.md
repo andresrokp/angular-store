@@ -69,3 +69,13 @@ Bonus
 - Declaratio and exporting of the Object: `export class MyComponent{ attributes & methods }`.
 - I can declare public and private access to attributes.
 - Private atts cannot be accessed from the HTML template.
+
+### L7 - Property Bindind
+
+- Is a way to associate model variables with html properties values
+- Syntax: `<htmlElement [prop]="varInModel"`. [] and "" wrapping. 
+- This creates an unidirectional relation.
+- Is encourged over string interpolation to manage html props
+- Bind a progress value: `<progress max="100" [value]="numberInModel"/>`
+- Is possible to bind objects `<img [src]="user.profilePicUrl">`
+- The ng workspace is aware variables existance
